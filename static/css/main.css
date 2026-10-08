@@ -2,7 +2,7 @@
 
 
 :root {
-    --h-title-color: #3948d2;
+    --h-title-color: #2E1A47;
     --top-section-overlay: 0.52;
     --skeleton-base: #e4e7eb;
     --skeleton-highlight: #f5f7fa;
@@ -261,4 +261,144 @@ section .main-body {
     .skeleton-block::after {
         animation: none;
     }
+}
+    
+    /* =========================================
+   DARK MODE
+   ========================================= */
+
+:root {
+    --site-bg: #ffffff;
+    --site-text: #212529;
+    --site-muted: #6c757d;
+    --site-section: #f8f9fa;
+    --site-border: #dee2e6;
+    --site-navbar: rgba(255, 255, 255, 0.95);
+}
+
+/* Dark theme */
+
+[data-theme="dark"] {
+    --site-bg: #121212;
+    --site-text: #eeeeee;
+    --site-muted: #aaaaaa;
+    --site-section: #181818;
+    --site-border: #333333;
+    --site-navbar: rgba(18, 18, 18, 0.95);
+}
+
+
+/* Main page */
+
+[data-theme="dark"] body {
+    background-color: var(--site-bg) !important;
+    color: var(--site-text) !important;
+}
+
+
+/* Navigation */
+
+[data-theme="dark"] .header {
+    background-color: var(--site-navbar) !important;
+}
+
+[data-theme="dark"] .navbar-light .navbar-brand,
+[data-theme="dark"] .navbar-light .nav-link {
+    color: #eeeeee !important;
+}
+
+[data-theme="dark"] .navbar-toggler {
+    color: #eeeeee !important;
+    border-color: #555555 !important;
+}
+
+
+/* Main sections */
+
+[data-theme="dark"] .bg-gradient-primary-to-secondary-light,
+[data-theme="dark"] .bg-gradient-primary-to-secondary-gray {
+    background: var(--site-section) !important;
+    color: var(--site-text) !important;
+}
+
+
+/* Section headings */
+
+[data-theme="dark"] main h1,
+[data-theme="dark"] main h2,
+[data-theme="dark"] main h3,
+[data-theme="dark"] main h4,
+[data-theme="dark"] main h5,
+[data-theme="dark"] main h6 {
+    color: #eeeeee !important;
+}
+
+
+/* Paragraphs */
+
+[data-theme="dark"] main p {
+    color: #eeeeee !important;
+}
+
+
+/* Links */
+
+[data-theme="dark"] main a {
+    color: #7db7ff !important;
+}
+
+
+/* Muted text */
+
+[data-theme="dark"] .text-muted {
+    color: var(--site-muted) !important;
+}
+
+
+/* Bootstrap light backgrounds */
+
+[data-theme="dark"] .bg-light {
+    background-color: var(--site-section) !important;
+}
+
+
+/* Cards */
+
+[data-theme="dark"] .card {
+    background-color: #202020 !important;
+    color: #eeeeee !important;
+    border-color: var(--site-border) !important;
+}
+
+
+/* Theme button */
+
+.theme-toggle {
+    border: none;
+    background: transparent;
+    color: var(--site-text);
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+[data-theme="dark"] .theme-toggle {
+    color: #eeeeee;
+}
+
+.theme-toggle:hover {
+    opacity: 0.7;
+}
+
+
+/* Smooth transition */
+
+body,
+.header,
+main section,
+.card {
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
 }

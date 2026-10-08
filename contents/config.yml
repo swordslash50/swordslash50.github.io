@@ -1,28 +1,31 @@
-title: User Name's Homepage
-page-top-title: User Name
-top-section-bg-text: Computer Science
+title: JacksonbsPhoto
+page-top-title: JacksonBSPhoto
+top-section-bg-text: Photography Portfolio
 backgrounds:
   - static/assets/background/background_0.jpeg
   - static/assets/background/background_1.jpeg
 background-interval-ms: 7000
 background-overlay: 0.52
-copyright-text: '&copy; Sen Li 2023-2026. All Rights Reserved.'
+copyright-text: '&copy; Jackson Smith 2026. All Rights Reserved. Website created from senli1073 template.'
 github-link:
   text: Github
-  href: https://github.com/senli1073
+  href: https://github.com/swordslash50
 license-link:
   text: License
-  href: https://github.com/senli1073/senli1073.github.io/blob/main/LICENSE
+  href: https://github.com/swordslash50/swordslash50.github.io/blob/main/LICENSE
 sections:
   - id: home
     nav: HOME
-    title: User Name&ensp;|&ensp;姓名
+    title: JacksonBSPhoto
     href: '#page-top' # Default to '#<id>' if not specified
   - id: publications
-    nav: PUBLICATIONS
-    title: PUBLICATIONS
+    nav: TECH WRITINGS
+    title: Tech Writings
     icon: bi-file-text-fill
   - id: awards
     nav: AWARDS
     title: AWARDS
     icon: bi-award-fill
+  - id: photos
+    nav: PHOTOS
+    title: PHOTOS
